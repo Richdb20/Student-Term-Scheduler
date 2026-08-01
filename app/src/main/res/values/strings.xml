@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RichardBrown-C196</string>
+    <string name="home">Home</string>
+    <string name="assessments">Assessments</string>
+    <string name="terms">Terms</string>
+    <string name="courses">Courses</string>
+    <string name="select_an_option_below_to_view_add_modify_or_delete_terms_courses_or_assessments">Select an option below to View, Add, Modify, or Delete Terms, Courses, and Assesments.</string>
+    <string name="version_1_0">Version: 1.0</string>
+    <string name="homeLogo" />
+    <string name="term">Term</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="save">Save</string>
+    <string name="addsymbol">addSymbol</string>
+    <string name="course_status">Course Status</string>
+    <string name="course_instructor_details">Course Instructor Details</string>
+    <string-array name="status_array">
+        <item>Active</item>
+        <item>Completed</item>
+        <item>Cancelled</item>
+    </string-array><![CDATA[ />
+    ]]>
+    <string name="channel_name">myChannel</string>
+    <string name="channel_description">myChannelDescription</string>
+    <string-array name="type_array">
+        <item>Objective</item>
+        <item>Performance</item>
+    </string-array> />
+</resources>

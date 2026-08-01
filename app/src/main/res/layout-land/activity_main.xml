@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="72dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/home"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/homeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeLogo" />
+
+    <ImageView
+        android:id="@+id/homeLogo"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/homeLogo"
+        app:layout_constraintBottom_toTopOf="@+id/textHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_school_24"
+        app:tint="@color/purple_500" />
+
+    <Button
+        android:id="@+id/termsButton"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="5dp"
+        android:onClick="Terms"
+        android:text="@string/terms"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/coursesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeText" />
+
+    <Button
+        android:id="@+id/coursesButton"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:onClick="Courses"
+        android:text="@string/courses"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/assessmentsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsButton" />
+
+    <Button
+        android:id="@+id/assessmentsButton"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:onClick="Assessments"
+        android:text="@string/assessments"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintStart_toEndOf="@+id/versionText"
+        app:layout_constraintTop_toBottomOf="@+id/coursesButton" />
+
+    <TextView
+        android:id="@+id/homeText"
+        android:layout_width="339dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/select_an_option_below_to_view_add_modify_or_delete_terms_courses_or_assessments"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/termsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHome" />
+
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/version_1_0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
